@@ -1,0 +1,129 @@
+:root {
+    --magenta: hsl(300, 43%, 22%);
+    --pink: hsl(333, 80%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray-magenta: hsl(300, 24%, 96%);
+    --dark-gray-magenta: hsl(303, 10%, 53%);
+    --spartan: font-family: 'Spartan', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Spartan', sans-serif;
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.first-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.reviews-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h1 {
+    width: 300px;
+    color: var(--magenta);
+    font-weight: bolder;
+}
+
+.first-section p {
+    width: 420px;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 0.8em;
+    color: var(--magenta);
+}
+
+.featured-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured {
+    padding: 10px 1px;
+    border-radius: 5px;
+    background-color: var(--light-gray-magenta);
+    text-align: center;
+    color: var(--magenta);
+    font-weight: bold;
+}
+
+.featured:first-child {
+    transform: translateX(-20%);
+}
+
+.featured:nth-child(2) {
+    transform: translateX(-10%);
+}
+
+.featured:last-child {}
+
+.featured::before {
+    content: url(./images/icon-star.svg);
+    margin-right: 5px;
+}
+
+.single-review1 {
+    padding: 30px;
+    background-color: var(--magenta);
+    color: var(--white);
+    margin-right: 25px;
+    border-radius: 5px;
+}
+
+.single-review2 {
+    padding: 30px;
+    background-color: var(--magenta);
+    color: var(--white);
+    border-radius: 5px;
+    transform: translateY(10%);
+}
+
+.single-review3 {
+    padding: 30px;
+    background-color: var(--magenta);
+    color: var(--white);
+    margin-left: 25px;
+    border-radius: 5px;
+    transform: translateY(20%);
+}
+
+.user-img {
+    display: inline;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 25px;
+}
+
+.top-review {
+    display: flex;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    display: inline;
+
+}
+
+span {
+    color: var(--pink);
+
+}
